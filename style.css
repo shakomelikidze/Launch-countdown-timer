@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+    font-family: "Red Hat Text", sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    background-image: url(https://cdn.glitch.global/a0a724f2-aa73-4084-8930-80dbd9446722/bg-stars.svg?v=1692118661968), url(https://cdn.glitch.global/a0a724f2-aa73-4084-8930-80dbd9446722/pattern-hills.svg?v=1692118680642);
+    background-position: right top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14.2rem 2.4rem 4.8rem 2.4rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    color: #ffffff;
+    letter-spacing: 0.614rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    margin-top: 5.4rem;
+    width: 32.7rem;
+}
+
+.number_div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.first_background {
+    background: rgba(25, 26, 35, 0.5);
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
+    width: 7rem;
+    height: 7.1rem;
+}
+
+.second_background {
+    background: radial-gradient(circle at 0 100%, rgba(25, 26, 35, 1) 4px,
+    #2d2f42 0px), radial-gradient(circle at 100% 100%, rgba(25, 26, 35, 1)
+    4px, #2d2f42 0px), radial-gradient(circle at 100% 0, rgba(25, 26, 35, 1) 4px,
+    #343650 0px), radial-gradient(circle at 0 0, rgba(25, 26, 35, 1) 4px, #343650 0px);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom right, bottom left;
+    backdrop-filter: brightness(0.7);
+    border-radius: 0.8rem;
+    width: 7rem;
+    height: 6.6rem;
+}
+
+.number {
+    color: hsl(345, 95%, 68%);
+    font-size: 3.6rem;
+    line-height: 7.1rem;
+    font-weight: 700;
+    letter-spacing: -0.108rem;
+    position: relative;
+    top: -3px;
+    width: 7rem;
+    height: 7.1rem;
+}
+
+.time-p {
+    color: #8385A9;
+    font-size: 0.7rem;
+    line-height: 0.926rem;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 0.296rem;
+    margin-top: 0.8rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 4.8rem;
+    width: 13.6rem;
+}
+
+footer svg {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        padding-top: 13rem;
+        background-size: 100%;
+    }
+    
+    .heading {
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+        letter-spacing: 0.75rem;
+    }
+
+    .box {
+        gap: 3.2rem;
+        margin-top: 7rem;
+        width: 69.3rem;
+    }
+
+    .first_background {
+        border-radius: 0.8rem;
+        width: 14.8rem;
+        height: 15rem;
+    }
+
+    .second_background {
+        height: 14rem;
+        width: 14.8rem;
+    }
+
+    .number {
+        font-size: 8rem;
+        line-height: 7.1rem;
+        letter-spacing: -0.208rem;
+        position: relative;
+        top: 33px;
+        width: 14.8rem;
+        height: 15rem;
+    }
+
+    .para {
+        font-size: 1.4rem;
+        letter-spacing: 0.5rem;
+    }
+
+    svg:hover path {
+        fill: #FB5E84;
+    }
+
+}    
